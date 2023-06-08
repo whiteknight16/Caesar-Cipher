@@ -23,7 +23,7 @@ const encrypt_function=()=>{
   shift=shift%26
   let encrypt_message=""
   for (let i=0;i<message.length;i++){
-    let index=alphabet.lastIndexOf(message[i])
+    let index=alphabet.indexOf(message[i])
 
     if (isLetter(message[i])){
       encrypt_message+=alphabet[index+shift]
